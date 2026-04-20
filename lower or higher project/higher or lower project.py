@@ -37,7 +37,7 @@ while not game_over:
     user_info_1 = f'compare A: {name}, {description}, {country}'
     user_info_2= f'compare B: {name_2}, {description_2}, {country_2}'
 
-# This is where i printed them out on the console
+# This is where I printed them out on the console
     print(user_info_1)
     print(vs)
     print(user_info_2)
@@ -55,6 +55,7 @@ while not game_over:
         DATA_CHOICE_2 = random.choice(data)
         LIVES += 1
     elif compare_output == False:
+            LIVES -= 1
             print('\n' * 10)
             print(logo)
             print(f'SORRY YOU ARE WRONG, YOUR CURRENT SCORE IS {LIVES}')
